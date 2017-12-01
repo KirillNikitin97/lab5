@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/bootstrap.css">
+    <link type="text/css" rel="stylesheet" href="/static/css/base.css">
+    <link type="text/css" rel="stylesheet" href="/static/css/navbar.css">
+
+</head>
+<body>
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid center-block">
+      <div class="col-xs-1 ">
+         <p class="navbar-brand" href="/">Общее1</p>
+      </div>
+      <div class="col-xs-2 ">
+          <p clas="p-text-col" href="/">Общее2</p>
+
+      </div>
+      <div class="col-xs-2 ">
+          <p clas="p-text-col" href="/">Общее3</p>
+
+      </div>
+      <div class="col-xs-2">
+          <p clas="p-text-col" href="/">Общее4</p>
+      </div>
+
+  </div>
+</nav>
+
+{% block content %}{% endblock %}
+</body>
+</html>

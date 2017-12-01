@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+<!--наследуемся от базового-->
+
+
+{% block title %}{{ user.name }}{% endblock %}
+
+{% block content %}
+    {% if user.sex == "M" %}
+        <div class="container-fluid" style="max-width: 800px">
+            <div class="row" style="background-color: #b9def0" >
+                <div class="col-md-8">
+                <img src="{{ user.image }}">
+                </div>
+                <div class="col-md-4">
+                <p>{{ user.name }}</p>
+                <p>{{ user.surname }}</p>
+                <p>{{ user.db }}</p>
+                </div>
+            </div>
+        </div>
+    {% else %}
+        <div class="container-fluid" style="max-width: 800px">
+            <div class="row" style="background-color: #dca7a7" >
+                <div class="col-md-8">
+                <img src="{{ user.image }}">
+                </div>
+                <div class="col-md-4">
+                <p>{{ user.name }}</p>
+                <p>{{ user.surname }}</p>
+                <p>{{ user.db }}</p>
+                </div>
+            </div>
+        </div>
+
+    {% endif %}
+
+{% endblock %}

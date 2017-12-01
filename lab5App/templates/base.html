@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/bootstrap.css">
+    <link type="text/css" rel="stylesheet" href="/static/css/base.css">
+    <link type="text/css" rel="stylesheet" href="/static/css/navbar.css">
+
+</head>
+<body>
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid center-block">
+      <div class="col-xs-1 text-center">
+         <p class="navbar-brand" href="/">Доступный интерфейс</p>
+      </div>
+      <div class="col-xs-2 text-center">
+          <p clas="p-text-col" href="/">Размер текста</p>
+          <a class="btn btn-default" href="#" role="button">-</a>
+          <a class="btn btn-default" href="#" role="button">+</a>
+      </div>
+      <div class="col-xs-2 text-center">
+          <p clas="p-text-col" href="/">Интервал</p>
+          <a class="btn btn-default" href="#" role="button">-</a>
+          <a class="btn btn-default" href="#" role="button">+</a>
+      </div>
+      <div class="col-xs-2 text-center">
+          <p clas="p-text-col" href="/">Озвучивание</p>
+          <a class="btn btn-default" href="#" role="button">-</a>
+
+      </div>
+      <div class="col-xs-3 text-center">
+          <p clas="p-text-col" href="/">Изображения и анимация</p>
+          <a class="btn btn-default" href="#" role="button">-</a>
+          <a class="btn btn-default" href="#" role="button">+</a>
+      </div>
+      <div class="col-xs-2 text-center">
+          <p clas="p-text-col" href="/">Цветовая схема</p>
+          <a class="btn btn-default" href="#" role="button">б</a>
+          <a class="btn btn-default" href="#" role="button">ч</a>
+          <a class="btn btn-default" href="#" role="button">с</a>
+      </div>
+  </div>
+</nav>
+
+{% block content %}{% endblock %}
+</body>
+</html>

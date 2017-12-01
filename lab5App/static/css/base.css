@@ -1,0 +1,19 @@
+/*этот кусок кода для выравнивая полей в форме для добавления*/
+.field{
+    clear:both;
+    text-align:right;
+}
+
+label {float:left;}
+
+.main {
+    float:left
+}
+/*дальше можно */
+.p-article {
+    font-size: 24px;
+    color: #11144e;
+}
+.h2style{
+    font-size: 48px;
+}

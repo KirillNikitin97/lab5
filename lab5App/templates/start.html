@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}Игра угадай число{% endblock %}
+
+{% block content %}
+<div class="container-fluid">
+    <h1 class="text-center">УГАДАЙ ЧИСЛО</h1>
+    <h1 class="text-center">Список</h1>
+    <ul class="list-inline">
+        {% for elem in elements %}
+            {% include 'element.html' with element=elem %}
+        {% endfor %}
+    </ul>
+</div>
+{% endblock %}

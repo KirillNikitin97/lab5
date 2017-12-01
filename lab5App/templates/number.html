@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+<!--наследуемся от базового-->
+
+
+{% block title %}{{ element.rus }}{% endblock %}
+
+{% block content %}
+<div class="container-fluid" style="max-width: 400px">
+    <body>
+    {% if element.id == secret_id %}
+        <h1 class="text-center" style="color: #27ff4b">Верно!</h1>
+    {% else %}
+        <h1 class="text-center" style="color: #ff353b">Неверно!</h1>
+    {% endif %}
+    <h3>{{ element.ord }}</h3>
+    <ul>
+        <li><p>Цифра: {{ element.id }}</p></li>
+        <li><p>На русском: {{ element.rus }}</p></li>
+        <li><p>На английском: {{ element.eng }}</p></li>
+    </ul>
+    </body>
+</div>
+{% endblock %}
